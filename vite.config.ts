@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
   // This matches your repository name: https://indusrobotix.github.io/test/
-  base: "/test/", 
+  base: "/indusrobotix/", 
   build: {
     sourcemap: false, // 👈 Hides your source code from the browser's "Inspect" tool
   },
