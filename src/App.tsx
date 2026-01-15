@@ -20,7 +20,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       {/* Ensure basename is set to your repo name */}
-      <BrowserRouter basename="/test">
+      <BrowserRouter basename="/indusrobotix">
         <Layout>
           <Routes>
             <Route path="/" element={<Index />} />
