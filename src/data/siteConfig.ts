@@ -19,8 +19,8 @@ export const siteConfig = {
   // Contact Information
   contact: {
     email: "info@indusrobotix.pk",
-    phone: "+92 300 1234567",
-    whatsapp: "+92 300 1234567",
+    phone: "+92 312 1179306",
+    whatsapp: "+92 312 1179306",
     address: "Tech Innovation Hub, Lahore, Pakistan",
     city: "Lahore",
     country: "Pakistan",
