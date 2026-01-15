@@ -15,12 +15,12 @@ import NotFound from "./pages/NotFound";
 const queryClient = new QueryClient();
 
 const App = () => (
-  <BrowserRouter basename="/test">
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      {/* Ensure basename is set to your repo name */}
+      <BrowserRouter basename="/test">
         <Layout>
           <Routes>
             <Route path="/" element={<Index />} />
