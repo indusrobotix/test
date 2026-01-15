@@ -3,10 +3,12 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 
-// https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  // 👇 ADD THIS LINE BELOW (make sure it matches your repo name)
+  // This matches your repository name: https://indusrobotix.github.io/test/
   base: "/test/", 
+  build: {
+    sourcemap: false, // 👈 Hides your source code from the browser's "Inspect" tool
+  },
   server: {
     host: "::",
     port: 8080,
