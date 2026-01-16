@@ -23,16 +23,16 @@ export interface Product {
 
 export const products: Product[] = [
   {
-    id: "starter-kit",
-    name: "Starter Robotics Kit",
-    description: "Perfect for beginners. Includes Arduino Uno, sensors, motors, and our signature acrylic chassis.",
-    price: 8500,
-    originalPrice: 10000,
+    id: "2wd-Alpha-module-1",
+    name: "2WD Alpha Module I",
+    description: "Perfect for beginners. Includes our signature acrylic chassis, Motors, Tyres, Cell Holder, Mountings and Nut-Screws.",
+    price: 1300,
+    originalPrice: 1450,
     image: productKit,
     category: "kits",
     badge: "Best Seller",
-    rating: 5,
-    features: ["Arduino Uno R3", "4 DC Motors", "IR Sensors", "Custom Chassis", "Assembly Guide"],
+    rating: 4,
+    features: [ "4 DC Motors + Tyres", "Custom Chassis", "Assembly Guide"],
     inStock: true,
   },
   {
