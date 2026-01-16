@@ -9,6 +9,7 @@ import alpha2wdmodule3 from "@/assets/module3.jpg";
 import alpha2wdmodule4 from "@/assets/module4.jpg";
 import alpha2wdmodule5 from "@/assets/module5.jpg";
 import alpha2wdmodule6 from "@/assets/module6.jpg";
+import update from "@/assets/update.jpg";
 
 export interface Product {
   id: string;
@@ -103,8 +104,8 @@ export const products: Product[] = [
     id: "custom-chassis-small",
     name: "Custom Acrylic Chassis - Small",
     description: "Precision-cut acrylic chassis for small robots. Durable and lightweight.",
-    price: "500+",
-    image: robotCar,
+    price: 500 - 1500,
+    image: update,
     category: "chassis",
     rating: 4,
     features: ["3mm Acrylic", "Laser Cut", "Mounting Holes"],
