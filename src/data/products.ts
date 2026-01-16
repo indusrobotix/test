@@ -3,7 +3,7 @@
 // Edit this file to add, remove, or update products
 // ============================================
 
-import productKit from "@/assets/product-kit.jpg";
+import productKit from "@/assets/module1.jpg";
 import chassisDesign from "@/assets/chassis-design.jpg";
 import robotCar from "@/assets/robot-car.jpg";
 
