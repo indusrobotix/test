@@ -41,7 +41,7 @@ export const services: Service[] = [
       "Multiple material options",
       "Rapid prototyping",
     ],
-    price: "Starting from Rs. 2,000",
+    price: "Starting from Rs. 500",
   },
   {
     id: "workshops",
@@ -68,7 +68,7 @@ export const services: Service[] = [
       "Component recommendations",
       "Troubleshooting help",
     ],
-    price: "Rs. 1,500/hour",
+    price: "Rs. 1,000/hour",
   },
   {
     id: "repair",
