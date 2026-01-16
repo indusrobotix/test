@@ -3,9 +3,12 @@
 // Edit this file to add, remove, or update products
 // ============================================
 
-import productKit from "@/assets/module1.jpg";
-import chassisDesign from "@/assets/chassis-design.jpg";
-import robotCar from "@/assets/robot-car.jpg";
+import alpha2wdmodule1 from "@/assets/module1.jpg";
+import alpha2wdmodule2 from "@/assets/module2.jpg";
+import alpha2wdmodule3 from "@/assets/module3.jpg";
+import alpha2wdmodule4 from "@/assets/module4.jpg";
+import alpha2wdmodule5 from "@/assets/module5.jpg";
+import alpha2wdmodule6 from "@/assets/module6.jpg";
 
 export interface Product {
   id: string;
@@ -25,29 +28,44 @@ export const products: Product[] = [
   {
     id: "2wd-Alpha-module-1",
     name: "2WD Alpha Module I",
-    description: "Perfect for beginners. Includes our signature acrylic chassis, Motors, Tyres, Cell Holder, Mountings and Nut-Screws.",
-    price: 1300,
-    originalPrice: 1450,
-    image: productKit,
+    description: "Basic Multi-Upgradeable Kit. Perfect for beginners. Includes our signature acrylic chassis, Motors, Tyres, Cell Holder, Mountings and Nut-Screws.",
+    price: 1,300,
+    originalPrice: 1,450,
+    image: alpha2wdmodule1,
     category: "kits",
     badge: "Best Seller",
     rating: 4,
-    features: [ "4 DC Motors + Tyres", "Custom Chassis", "Assembly Guide"],
+    features: [ "2 DC Motors + Tyres", "Custom Chassis", "Assembly Guide"],
     inStock: true,
   },
   {
-    id: "advanced-kit",
-    name: "Advanced Robotics Kit",
-    description: "For experienced builders. Features ESP32, advanced sensors, and modular chassis design.",
-    price: 15000,
-    image: chassisDesign,
+    id: "2wd-Alpha-module-2",
+    name: "2WD Alpha Module II",
+    description: "Complete Obstacle Avoidance Robot Kit. Perfect for beginners. Includes our signature acrylic chassis, Motors, Tyres, Electronics, Cell Holder, Mountings and Nut-Screws.",
+    price: 3,450,
+    originalPrice: 3,850,
+    image: alpha2wdmodule2,
     category: "kits",
     badge: "Popular",
-    rating: 5,
-    features: ["ESP32 Board", "6 Servo Motors", "Ultrasonic Sensors", "Bluetooth Module", "Premium Chassis"],
+    rating: 4.5,
+    features: ["2 DC Motors + Tyres", "Arduino UNO", "L298N Motor Driver", "Ultrasonic Sensor", "Custom Chassis", "Assembly Guide"],
     inStock: true,
   },
+  
   {
+    id: "2wd-Alpha-module-3",
+    name: "2WD Alpha Module III",
+    description: "Complete Line Following Robot Kit. Perfect for beginners. Includes our signature acrylic chassis, Motors, Tyres, Electronics, Cell Holder, Mountings and Nut-Screws.",
+    price: 3,750,
+    originalPrice: 4,200,
+    image: alpha2wdmodule3,
+    category: "kits",
+    badge: "Popular",
+    rating: 3.5,
+    features: ["2 DC Motors + Tyres", "Arduino UNO", "L298N Motor Driver", "TCRT5000 IR Sensors", "Custom Chassis", "Assembly Guide"],
+    inStock: true,
+  },
+/*  {
     id: "line-follower",
     name: "Line Follower Robot",
     description: "Ready-to-assemble line following robot with pre-programmed Arduino and IR sensor array.",
@@ -80,19 +98,19 @@ export const products: Product[] = [
     rating: 5,
     features: ["Ultrasonic Sensor", "IR Sensors x5", "Temperature Sensor", "PIR Motion"],
     inStock: true,
-  },
+  },*/
   {
     id: "custom-chassis-small",
     name: "Custom Acrylic Chassis - Small",
     description: "Precision-cut acrylic chassis for small robots. Durable and lightweight.",
-    price: 1500,
+    price: "500+",
     image: robotCar,
     category: "chassis",
     rating: 4,
-    features: ["3mm Acrylic", "Laser Cut", "Mounting Holes", "Hardware Included"],
+    features: ["3mm Acrylic", "Laser Cut", "Mounting Holes"],
     inStock: true,
   },
-  {
+  /*{
     id: "custom-chassis-large",
     name: "Custom Acrylic Chassis - Large",
     description: "Heavy-duty acrylic chassis for larger robots and competition builds.",
@@ -114,7 +132,7 @@ export const products: Product[] = [
     rating: 4,
     features: ["Soldering Iron", "Screwdriver Set", "Wire Cutters", "Multimeter"],
     inStock: false,
-  },
+  },*/
 ];
 
 // Product categories for filtering
