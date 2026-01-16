@@ -18,11 +18,11 @@ export const siteConfig = {
 
   // Contact Information
   contact: {
-    email: "info@indusrobotix.pk",
+    email: "indusrobotix@gmail.com",
     phone: "+92 312 1179306",
     whatsapp: "+92 312 1179306",
-    address: "Tech Innovation Hub, Lahore, Pakistan",
-    city: "Lahore",
+    address: "Robotic Innovation Hub, Karachi, Pakistan",
+    city: "Karachi",
     country: "Pakistan",
   },
 
@@ -30,22 +30,22 @@ export const siteConfig = {
   social: {
     facebook: "https://facebook.com/indusrobotix",
     instagram: "https://instagram.com/indusrobotix",
-    twitter: "https://twitter.com/indusrobotix",
-    youtube: "https://youtube.com/@indusrobotix",
+    //twitter: "https://twitter.com/indusrobotix",
+    //youtube: "https://youtube.com/@indusrobotix",
     linkedin: "https://linkedin.com/company/indusrobotix",
   },
 
   // Business Hours
   businessHours: {
-    weekdays: "9:00 AM - 6:00 PM",
-    saturday: "10:00 AM - 4:00 PM",
-    sunday: "Closed",
+    weekdays: "2:00 PM - 11:00 PM",
+    saturday: "1:00 PM - 1:00 AM",
+    sunday: "9:00 AM - 11:00 PM",
   },
 
   // Statistics (shown on homepage)
   stats: [
-    { value: "500+", label: "Kits Delivered" },
-    { value: "50+", label: "Custom Designs" },
+    { value: "10+", label: "Kits Delivered" },
+    { value: "5+", label: "Custom Designs" },
     { value: "100%", label: "Local Sourcing" },
     { value: "24/7", label: "Support" },
   ],
