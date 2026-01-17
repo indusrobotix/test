@@ -40,17 +40,27 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-
-    toast({
-      title: "Message Sent!",
-      description: "We'll get back to you as soon as possible.",
+  try {
+    const response = await fetch(process.env.NEXT_PUBLIC_FORMSP_URL!, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
     });
+
+    if (response.ok) {
+      toast({ title: "Success!", description: "We'll be in touch soon." });
+      setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
+    }
+  } catch (error) {
+    toast({ title: "Error", description: "Message failed to send.", variant: "destructive" });
+  } finally {
+    setIsSubmitting(false);
+  }
+};
 
     setFormData({
       name: "",
