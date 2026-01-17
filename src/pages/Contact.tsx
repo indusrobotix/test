@@ -40,36 +40,40 @@ const Contact = () => {
     });
   };
 
-const handleSubmit = async (e: React.FormEvent) => {
-  e.preventDefault();
-  setIsSubmitting(true);
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
 
-  try {
-    const response = await fetch(process.env.NEXT_PUBLIC_FORMSP_URL!, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(formData),
-    });
+    try {
+      // Accesses the URL from your .env.local file securely
+      const response = await fetch(process.env.NEXT_PUBLIC_FORMSP_URL!, {
+        method: "POST",
+        headers: { 
+          "Content-Type": "application/json",
+          "Accept": "application/json" 
+        },
+        body: JSON.stringify(formData),
+      });
 
-    if (response.ok) {
-      toast({ title: "Success!", description: "We'll be in touch soon." });
-      setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
+      if (response.ok) {
+        toast({ 
+          title: "Success!", 
+          description: "Your message has been sent successfully." 
+        });
+        // Reset the form after success
+        setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
+      } else {
+        throw new Error("Form submission failed");
+      }
+    } catch (error) {
+      toast({ 
+        title: "Error", 
+        description: "Message failed to send. Please try again.", 
+        variant: "destructive" 
+      });
+    } finally {
+      setIsSubmitting(false);
     }
-  } catch (error) {
-    toast({ title: "Error", description: "Message failed to send.", variant: "destructive" });
-  } finally {
-    setIsSubmitting(false);
-  }
-};
-
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      subject: "",
-      message: "",
-    });
-    setIsSubmitting(false);
   };
 
   const contactInfo = [
