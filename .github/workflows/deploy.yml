@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: ["main"] # Or "master" if that's your branch name
+    branches: ["main"]
 
 permissions:
   contents: read
@@ -26,12 +26,15 @@ jobs:
         run: npm install
 
       - name: Build
+        # This tells Next.js/Vite to use your Formspree URL during the build
         run: npm run build
+        env:
+          NEXT_PUBLIC_FORMSP_URL: ${{ vars.NEXT_PUBLIC_FORMSP_URL }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist' # Only uploads the compiled/scrambled code
+          path: './dist' 
 
   deploy:
     needs: build
